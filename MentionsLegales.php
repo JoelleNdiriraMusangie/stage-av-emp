@@ -22,6 +22,33 @@
 
 <body>
 
+  <!-- Responsive navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#!">Avenir Emploi </a>
+                <div class=menutoggle onclick="toggleMenu();"></div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php">ACCUEIL</a></li>
+                        
+                        <li class="nav-item"><a class="nav-link" href="resultat.php" onclick="toggleMenu();">RESULTAT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="LivreDor/livreDor.php" onclick="toggleMenu();">LIVRE D'OR</a></li>
+                        <li class="nav-item"><a class="nav-link" href="remerciements.php" onclick="toggleMenu();">REMERCIEMENTS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="NousContacter.php">CONTACT </a></li>
+                        <li class="nav-item"><a class="nav-link" href="Seconnecter.php" >Connexion membre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Admin/admin.php" >Connexion Admin</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php" >Agenda</a></li>
+
+                      
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+<!--mettre photo de Avenir emploi-->
 
 <section class="py-5 border-bottom" id="features">
             <div class="container px-5 my-5">

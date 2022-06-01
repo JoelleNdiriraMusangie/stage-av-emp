@@ -6,21 +6,23 @@ require 'DB.php';
 if (isset($_POOST['noms']))&&
     isset($_POST['prenom'])&&
     isset($_POST['telephone'])&&
-    isset($_POST['mail'])&&
+    isset($_POST['email'])&&
     isset($_POST['adresse'])&&
     isset($_POST['genreH'])&&
     isset($_POST['genreF'])&&
-    isset($_POST['sp'])
+    isset($_POST['sp'])  //erreur c pas sp mais situation ds la database d'ou l erreur  revopio et changer ca
     isset($_POST['message'])&&{
         $insertion=$newBD->prepare('INSERT INTO profil VALUES( NULL
-        , :nom,:prenom, :telephone, :mail, :adresse, :genre, ;situation)');
+        , :nom,:prenom, :telephone, :mail, :adresse, :genre, ;situation)');//les elements inserer ne sont pas pareil que a la database a tout modifie r
         $insertion->bindValue(':nom', $_POST['noms']);
         $insertion->bindValue(':prenom', $_POST['prenom']);
         $insertion->bindValue(':telephone', $_POST['telephone']);
-        $insertion->bindValue(':mail', $_POST['mail']);
+        $insertion->bindValue(':email', $_POST['email']);
         $insertion->bindValue(':adresse', $_POST['adresse']);
-        $insertion->bindValue(':genre', $_POST['genre']);
-        $insertion->bindValue('situation', $_POST['situation']);
+        $insertion->bindValue(':genreH', $_POST['genreH']);
+        $insertion->bindValue(':genreF', $_POST['genreF']);
+        $insertion->bindValue('sp', $_POST['sp']);
+        $insertion->bindValue('message', $_POST['message']);
         if ($verification){
             echo "<br>Ton Insertion est reussie";
         }
@@ -33,18 +35,16 @@ if (isset($_POOST['noms']))&&
 <?php
 session_start(); // pour recuperer les info liez au user
 
-$pdo= new PDO("mysql:host=localhost;dbname=avenirEmploie",
-"root", "");
+$pdo= new PDO("mysql:host=localhost;dbname=avenirEmploie", "root", "");
 if(isset($_POST['submit'])){
-    if (!empty($_POST['email']) AND !empty($_POST['pwd'])) {
+    if (!empty($_POST['email']) AND !empty($_POST['sp'])) {
        
 $email =$_POST['email'];
-$pwd =$_POST['pwd']; 
+$pwd =$_POST['sp']; 
 
 $_SESSION['email_saisi']=$email;
 
-$recupUser=$pdo->prepare('SELECT * FROM profil WHERE email =? AND pwd =?'); //y a pas pwd pour un contact form 
-$recupUser->execute(array($email,$pwd));
+$recupUser=$pdo->prepare('SELECT * FROM profil WHERE email =? AND sp =?'); 
 
 
 

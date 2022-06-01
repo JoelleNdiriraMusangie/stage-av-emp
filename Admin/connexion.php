@@ -45,6 +45,11 @@ if(isset($_POST['valider'])){
 </head>
 
 <body>
+
+
+
+
+<br><br>
     <hr>
     
 
@@ -58,5 +63,5 @@ if(isset($_POST['valider'])){
       <br><be>
           <input type="submit" name="valider">
 </form>
-<a href="index.php"> Retour<a>
+
 </html>

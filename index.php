@@ -34,14 +34,14 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#features">ACCUEIL</a></li>
                         <li class="nav-item"><a class="nav-link" href="Nospartenaires.php" onclick="toggleMenu();">NOS PARTENAIRES </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#temoignages" onclick="toggleMenu();">RESULTAT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="resultat.php" onclick="toggleMenu();">RESULTAT</a></li>
                         <li class="nav-item"><a class="nav-link" href="LivreDor/livreDor.php" onclick="toggleMenu();">LIVRE D'OR</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#temoignages" onclick="toggleMenu();">REMERCIEMENTS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="remerciements.php" onclick="toggleMenu();">REMERCIEMENTS</a></li>
                         <li class="nav-item"><a class="nav-link" href="NousContacter.php">CONTACT </a></li>
                         <li class="nav-item"><a class="nav-link" href="MentionsLegales.php" >MENTIONS LEGALES</a></li>
                         <li class="nav-item"><a class="nav-link" href="Seconnecter.php" >Connexion membre</a></li>
                         <li class="nav-item"><a class="nav-link" href="Admin/admin.php" >Connexion Admin</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#AgendaPartenaires" >Agenda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="AgendaE/CreerAgenda.php" >Agenda</a></li>
 
                       
 
@@ -92,14 +92,7 @@
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     
-            
-                    <div class="col-lg-4 mb-5 mb-lg-0" id="partenaires">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-                            <h2 class="h4 fw-bolder">NOS PARTENAIRES INSTUTITONELS/DIRECTS</h2>
-                            <p>Nos partenaires institutionneles sont ... pôle emploi et nos partenaires directs sont... l'amd</p>
-                            <a class="text-decoration-none" href="ACCUEIL/Nospartenaires.php">cliquez sur ce lien pour en savoir plus sur nos partenaires<i class="bi bi-arrow-right"></i>
-                            </a>   
-                    </div>
+            <!-- a la pace de ça mettre une photo  d'avenir emploi  pour maintenir le footer---->
                 </div>
             </div>
         </section>
@@ -116,7 +109,7 @@
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
                         <h2 class="h4 fw-bolder"> Agenda des diverses salles pour les associations partenaires </h2>
-
+<p> en cours de maintenance d'ici 2 semaines max until 15 JUIN 2022 <p>
 
 </div>
 </div>
@@ -135,25 +128,10 @@
             <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; Votre site web 2022</p></div>
             <section class="mentionslegales" id="mentionslegales">
                 <div class="contenu">
-                    <h2>LIVRE D'OR</h2>
-                    <p>Nos partenaires institutionneles sont ... pôle emploi et nos partenaires directs sont... l'amd
-
-                           <!--       <div class="ul-separator-bloc-container">  à modifier pour driger vers lapage amd et pole emploi 
-                                        <ul>
-                                                                    <li>
-                                                <a href="https://www.recrutement.banque-france.fr/lessentiel-sur-nos-concours/" class="title">
-                                                    <span>L’essentiel sur nos concours</span>
-                                                    <span class="picto"></span>
-                                                </a>
-                                            </li>
--->
-                    </p>
-                    <a href="#mentionslegales.pdf" target="_blank">cliquez sur ce lien pour en savoir plus sur nos mentions légales</a>
-                </div>        
                 <!-- ne pas oublier de telecharger le pdf ici dans assets nommer mentions légales a demander à l'association pour l'inclure-->
             </section>
 
-
+<p> rajouter des photos de Avenir Emploi<p>
 
         </footer>
         <!-- Bootstrap core JS-->
@@ -177,5 +155,3 @@
         </script>
     </body>
 </html>
-
-?>

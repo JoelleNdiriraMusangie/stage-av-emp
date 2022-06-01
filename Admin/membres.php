@@ -29,8 +29,8 @@ if (!$_SESSION['mdp']) { //remplacer login par mail ? ou pseudo mais plutôt mai
 
 </head>
 
-<body>
-
+<body align = "center">
+<b style="color:purple;">Bienvenue à l'espace d'affichage de tous les membres!</b><br />  
     <!--afficher tous les membres-->
     <?php
         $recupUsers = $bdd->query('SELECT * FROM utilisateurs');
@@ -45,7 +45,7 @@ if (!$_SESSION['mdp']) { //remplacer login par mail ? ou pseudo mais plutôt mai
 
 
     <!--fin d'afficher tous les membres-->
-<b style="color:purple;">Bienvenue à l'espace d'affichage de tous les membres!</b><br />  
+
 
 </body>
 </html>

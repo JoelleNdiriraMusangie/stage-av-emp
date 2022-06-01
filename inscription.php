@@ -139,7 +139,7 @@
                 }
                 ?>
          <!--//RAJOUTER SE CONNECTER.PHP EN ACTION 6-->
-            <form action="" method="post"> <!--/action="Seconnecter.php" car après l'inscription, il faut se connecter o a l'espace mebre ouvert pour depot cv et lm et prise de rdv -->
+            <form action="" method="post"> 
                 <h2 class="text-center">Inscription</h2>       
                 <div class="form-group">
                     <input type="text" name="pseudo" class="form-control" placeholder="Pseudo" required="required" autocomplete="off">

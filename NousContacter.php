@@ -20,6 +20,34 @@
 
 
 <body>
+<body>
+
+<!-- Responsive navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-5">
+        <a class="navbar-brand" href="#!">Avenir Emploi </a>
+        <div class=menutoggle onclick="toggleMenu();"></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php">ACCUEIL</a></li>
+                <li class="nav-item"><a class="nav-link" href="Nospartenaires.php" onclick="toggleMenu();">NOS PARTENAIRES </a></li>
+                <li class="nav-item"><a class="nav-link" href="resultat.php" onclick="toggleMenu();">RESULTAT</a></li>
+                <li class="nav-item"><a class="nav-link" href="LivreDor/livreDor.php" onclick="toggleMenu();">LIVRE D'OR</a></li>
+                <li class="nav-item"><a class="nav-link" href="#temoignages" onclick="toggleMenu();">REMERCIEMENTS</a></li>
+             
+                <li class="nav-item"><a class="nav-link" href="MentionsLegales.php" >MENTIONS LEGALES</a></li>
+                <li class="nav-item"><a class="nav-link" href="Seconnecter.php" >Connexion membre</a></li>
+                <li class="nav-item"><a class="nav-link" href="Admin/admin.php" >Connexion Admin</a></li>
+                <li class="nav-item"><a class="nav-link" href="#AgendaPartenaires" >Agenda</a></li>
+
+              
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
   
 
 <!-- Contact section-->
@@ -57,7 +85,7 @@
                                 <div class="invalid-feedback" >L'email n'est pas valide.</div>
                             </div>
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="adresse" type="text" name="adresse" placeholder="Enter your name..." />
+                                <input class="form-control" id="adresse" type="text" name="adresse" placeholder="Entrer votre adresse..." />
                                 <label for="adresse">adresse</label>
                                 <div class="invalid-feedback" >Une adresse est requis.</div>
                             </div>
@@ -86,9 +114,9 @@
             
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" name="message" placeholder="Enter your message here..." style="height: 10rem" ></textarea>
+                                <textarea class="form-control" id="message" type="text" name="message" placeholder="Entrer votre message ici..." style="height: 10rem" ></textarea>
                                 <label for="message">Message</label>
-                                <div class="invalid-feedback">Un message is requis.</div>
+                                <div class="invalid-feedback">Un messagees requis.</div>
                             </div>
                             <!-- Submit success message-->
                             <!---->
@@ -113,6 +141,8 @@
                 </div>
             </div>
         </section>
+
+        <br> <br>
 
 <a href="index.php"> Retour </a>
 </body>

@@ -53,4 +53,6 @@ while($row = mysqli_fetch_assoc($result))
 </div>
 
 </body>
+<footer> 
+ <!-- <a href="index.php"> Retour à la page principale  </a></footer>-->
 </html>

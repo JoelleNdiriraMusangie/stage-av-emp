@@ -2,7 +2,8 @@
 
 //include "DB.php";
 
-$db = mysqli_connect('localhost','root','aveniremploi' ,'');
+$db = mysqli_connect('localhost','root','','aveniremploi');
+
 
 
 if($db->connect_errno > 0){
@@ -28,7 +29,7 @@ header ("Location: LivreDor.php");
 else
 {
 
-	echo "The form is not set. La balise forme n'a pas été modifiée";
+	echo " La balise forme n'a pas été modifiée";
 
 }
 

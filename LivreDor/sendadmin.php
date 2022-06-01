@@ -22,7 +22,7 @@ header ("Location:admin.php");
 else
 {
 
-	echo "The form is not set.  La balise forme n'a pas été modifié";
+	echo " La balise forme n'a pas été modifié";
 
 }
 

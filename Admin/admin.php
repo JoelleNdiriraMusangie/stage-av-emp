@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!$_SESSION['mdp']){  //si l'utilisateur n'est pas connectée alors redirection vers la page connexion.php  sinon direction admin.php
+if(!$_SESSION['mdp']){  //si l'utilisateur dit "admin" n'est pas connecté alors redirection vers la page connexion.php  sinon direction admin.php
     header('Location:connexion.php');
 }
 ?>
@@ -13,7 +13,7 @@ if(!$_SESSION['mdp']){  //si l'utilisateur n'est pas connectée alors redirectio
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>AVENIR EMPLOI</title>
+        <title>AVENIR EMPLOI: PAGE ADMIN</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -21,12 +21,14 @@ if(!$_SESSION['mdp']){  //si l'utilisateur n'est pas connectée alors redirectio
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="./css/style.css" rel="stylesheet" />
         <link rel="stylesheet" href="./css/main.css">
-<title>Home</title>
+
 </head>
 
 <body>
+
+
 <hr> 
-<a href="membres.php"><em>Afficher tous les membres</em></a>
+<a href="membres.php"><em>Afficher tous les membres de l'association Avenir Emploi</em></a>
 </body>
 </html>
 

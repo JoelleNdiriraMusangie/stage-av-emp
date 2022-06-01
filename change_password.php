@@ -14,9 +14,9 @@
 
 
     // Si les variables existent 
-    if(!empty($_POST['current_password']) && !empty($_POST['new_password']) && !empty($_POST['new_password_retype'])){
+    if(!empty($_POST['password']) && !empty($_POST['new_password']) && !empty($_POST['new_password_retype'])){
         // XSS 
-        $current_password = htmlspecialchars($_POST['current_password']);
+        $password = htmlspecialchars($_POST['password']);
         $new_password = htmlspecialchars($_POST['new_password']);
         $new_password_retype = htmlspecialchars($_POST['new_password_retype']);
 
@@ -28,10 +28,10 @@
         $data_password = $check_password->fetch();
 
         // Si le mot de passe est le bon
-        if(password_verify($current_password, $data_password['password']))
+        if(password_verify($password, $data_password['password']))
         {
             // Si le mot de passe tapé est bon
-            if($new_password === $new_password_retype){
+            if($new_password == $new_password_retype){
 
                 // On chiffre le mot de passe
                 $cost = ['cost' => 12];
@@ -49,7 +49,7 @@
             }
         }
         else{
-            header('Location:landing.php?err=current_password');
+            header('Location:landing.php?err=password');
             die();
         }
 

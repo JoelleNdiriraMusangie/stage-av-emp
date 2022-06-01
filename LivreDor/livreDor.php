@@ -12,8 +12,14 @@
       
         <link rel="stylesheet" href="./connexion.css">
         <link rel="stylesheet" href="./css/livredor.css">
+
+
+
+        
 </head>
+
 <body>
+
 
 
 <div align="center"> 
@@ -39,5 +45,7 @@ include "messages.php";
 	<button class="btn btn-primary">Envoyer!</button>
 </form>
 </div>
+
+
 </body>
 </html>
