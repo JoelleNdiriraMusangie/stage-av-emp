@@ -41,10 +41,7 @@
                         <li class="nav-item"><a class="nav-link" href="MentionsLegales.php" >MENTIONS LEGALES</a></li>
                         <li class="nav-item"><a class="nav-link" href="Seconnecter.php" >Connexion membre</a></li>
                         <li class="nav-item"><a class="nav-link" href="Admin/admin.php" >Connexion Admin</a></li>
-                        <li class="nav-item"><a class="nav-link" href="AgendaE/CreerAgenda.php" >Agenda</a></li>
-
-                      
-
+                        <li class="nav-item"><a class="nav-link" href="AgendaE/admin.php" >Agenda</a></li>
                     </ul>
                 </div>
 
@@ -57,10 +54,11 @@
                     <div class="col-lg-6">
                         <div class="text-center my-5">
                             <h1 class="display-5 fw-bolder text-white mb-2">Avenir Emploi, une association d'aide pour tous  </h1>
-                            <p class="lead text-white-50 mb-4">Avenir emploi est une aossication Lilloise, permettant aux membres inscrits de trouver un emploi et ou une formation.  <br>Elle est situé au 132 Rue des Arts 59100 Roubaix France.</br> <br> Dirigée par Monsieur Etienne Ntambwe et joignable au:</br><br>0374680563 et via le mail: aveniremploi59@yahoo.fr</br>  </p>
+                            <p class="lead text-white-50 mb-4">Avenir emploi est une aossication Lilloise, permettant aux membres inscrits de trouver un emploi et ou une formation.  <br>Elle est situé au 132 Rue des Arts 59100 Roubaix France.</br> <br> Dirigée par Monsieur Etienne Ntambwe et joignable au:</br><br>Contact téléphonique :
+03.74.68.05.63 / 07.67.47.89.62 et via le mail: aveniremploi59@yahoo.fr</br>  </p>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Découvrir nos actions</a>
-                                <a class="btn btn-outline-light btn-lg px-4" href="#!">A propos de nous</a>
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="actions.php">Découvrir nos actions</a>
+                                <a class="btn btn-outline-light btn-lg px-4" href="apropos.php">A propos de nous</a>
                             </div>
                         </div>
                     </div>
@@ -114,6 +112,7 @@
 </div>
 </div>
 </div>
+</section>
 </body>
             <script src="./src/main.js"></script>
             
@@ -130,8 +129,8 @@
                 <div class="contenu">
                 <!-- ne pas oublier de telecharger le pdf ici dans assets nommer mentions légales a demander à l'association pour l'inclure-->
             </section>
+            
 
-<p> rajouter des photos de Avenir Emploi<p>
 
         </footer>
         <!-- Bootstrap core JS-->

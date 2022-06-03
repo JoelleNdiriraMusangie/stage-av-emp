@@ -1,12 +1,11 @@
 --
--- Database: `testing`
+-- Database: `aveniremlpoi`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `events`
---
+-- Structure de table pour la table 'events' 
 
 CREATE TABLE IF NOT EXISTS `events` (
   `id` int(11) NOT NULL,
@@ -16,21 +15,21 @@ CREATE TABLE IF NOT EXISTS `events` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Indexes for dumped tables
+-- Index des tables vidées
 --
 
 --
--- Indexes for table `events`
+--  Index pour la table 'events' 
 --
 ALTER TABLE `events`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT pour les tables vidées
 --
 
 --
--- AUTO_INCREMENT for table `events`
+-- AUTO_INCREMENT pour la table `events`
 --
 ALTER TABLE `events`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;

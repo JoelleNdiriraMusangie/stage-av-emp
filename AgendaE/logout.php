@@ -2,6 +2,6 @@
 session_start();
 $_SESSION = array(); 
 session_destroy();
-header('Location: Admin/connexion.php');
+header('Location: AgendaE/connexion.php');
 
 ?>

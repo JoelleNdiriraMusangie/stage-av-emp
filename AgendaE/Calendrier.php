@@ -2,12 +2,11 @@
 <?php
 // c'est la page index.php pour le calendrier de reservation des salles d'avenir emploi
 
-
 ?>
 <!DOCTYPE html>
 <html>
  <head>
-  <title>Jquery Fullcalandar Integration avec PHP et Mysql</title>
+  <title>Jquery Fullcalandier  Integration avec PHP et Mysql</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -29,7 +28,7 @@
     selectHelper:true,
     select: function(start, end, allDay)
     {
-     var title = prompt("Enter Event Title");
+     var title = prompt("Entrer le Titre de votre évènement");
      if(title)
      {
       var start = $.fullCalendar.formatDate(start, "Y-MM-DD HH:mm:ss");
@@ -41,7 +40,7 @@
        success:function()
        {
         calendar.fullCalendar('refetchEvents');
-        alert("Added Successfully");
+        alert(" Ajouté avec Succès");
        }
       })
      }
@@ -59,7 +58,7 @@
       data:{title:title, start:start, end:end, id:id},
       success:function(){
        calendar.fullCalendar('refetchEvents');
-       alert('Event Update');
+       alert('Evenement mise à jour');
       }
      })
     },
@@ -84,7 +83,7 @@
 
     eventClick:function(event)
     {
-     if(confirm("Are you sure you want to remove it?"))
+     if(confirm("Êtes-vous sûr de vouloir le supprimer?"))
      {
       var id = event.id;
       $.ajax({
@@ -94,7 +93,7 @@
        success:function()
        {
         calendar.fullCalendar('refetchEvents');
-        alert("Event Removed");
+        alert("Événement supprimé!");
        }
       })
      }
@@ -106,11 +105,14 @@
   </script>
  </head>
  <body>
+
   <br />
-  <h2 align="center"><a href="#">Jquery Fullcalandar Integration with PHP and Mysql</a></h2>
+  <h2 align="center"><a href="#">Jcalandrier intégral de nos événements</a></h2>
   <br />
   <div class="container">
    <div id="calendar"></div>
   </div>
+
  </body>
+
 </html>

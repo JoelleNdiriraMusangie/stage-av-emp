@@ -13,7 +13,7 @@ if(!$_SESSION['mdp']){  //si l'utilisateur dit "admin" n'est pas connecté alors
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>AVENIR EMPLOI: PAGE ADMIN</title>
+        <title>AVENIR EMPLOI: PAGE ADMIN POUR LE CALENDRIER </title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -30,7 +30,7 @@ if(!$_SESSION['mdp']){  //si l'utilisateur dit "admin" n'est pas connecté alors
 <hr> 
 
 <h2>
-<a href="membres.php"><em>Afficher tous les membres de l'association Avenir Emploi</em></a>
+<a href="calendrier.php"><em>Afficher les calendriers événementiels de l'association Avenir Emploi</em></a>
 </h2>
 
 

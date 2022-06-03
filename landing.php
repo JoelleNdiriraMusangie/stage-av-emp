@@ -267,7 +267,7 @@ $data = $req->fetch();
                     <form action="" method="post" enctype="multipart/form-data">
                         Selectionner un fichier à télécharger:
                     <input class="form-control"type="file" name="file" value="Envoyer votre fichier">
-                    <input class="bouton2" type="submit"  name="submit" value="Envoyer votre fichier">
+                    <input class="bouton2" type="submit"  name="submit" value="Envoyer votre fichier"  >
                     </form>
 
                     <!-- requette sqlpour telecharger le fichier  -->
